@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(Coding-Test-Problem-Solving_KBS)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -finput-charset=UTF-8 -fexec-charset=UTF-8")
+set(CMAKE_GENERATOR="Visual Studio 17 2022")
+add_executable(01003_FibonacciFunction "DP/01003_FibonacciFunction.cpp")
