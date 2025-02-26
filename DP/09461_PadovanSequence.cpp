@@ -1,18 +1,19 @@
 #include <iostream>
 #include <algorithm>
+#include <iomanip>
 
 using namespace std;
 
 int main() {
 	int T;
 	std::cin >> T;
-	int pentagon[5] = { 1,1,1,2,2 };
+	double pentagon[5] = { 1,1,1,2,2 };
 
 	int N;
-	int* maxPtr;
+	double* maxPtr;
 	int maxIndex;
 
-	int result[101];
+	double result[101];
 	result[0] = 1;
 	result[1] = 1;
 	result[2] = 1;
@@ -31,10 +32,8 @@ int main() {
 		}
 	}
 
-	//for (int i = 0; i < 100; i++) {
-	//	cout << result[i] << " : " << i << "\n";
-	//}
-
+	// 모든 자리수를 표현하여 출력
+	cout << fixed << setprecision(0);
 	while (T--) {
 		std::cin >> N;
 		cout << result[N - 1] << "\n";
